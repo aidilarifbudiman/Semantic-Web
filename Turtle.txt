@@ -1,0 +1,32 @@
+@base <http://journalku.id/> .
+@prefix rdf: <http://journal-pgsd.id/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://journal-pgsd.id/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rel: <http://www.perceive.net/schemas/relationship/> .
+
+<#journal-pgsd>
+    rel:hvItem1 <#agamadanakhlakmulia> ;
+    rel:hvItem2 <#ilmupengetahuan> ;
+    rel:hvItem3 <#kewarganegaraan> ;
+    rel:hvItem4 <#estetika> ;
+    rel:hvItem5 <#ilmuolahraga>;
+    foaf:hasTitle "Judul";
+    foaf:hasYear "Tahun";
+    foaf:hasVolume "Volume";
+    foaf:hasKelas "Kelas";
+    foaf:hasAuthor "Author".
+
+<#agamadanakhlakmulia>
+    rel:subItem <#journal-pgsd>.
+
+<#ilmupengetahuan>
+    rel:subItem <#journal-pgsd>.
+ 
+<#kewarganegaraan>
+    rel:subItem <#journal-pgsd>.
+
+<#estetika>
+    rel:subItem <#journal-pgsd>.
+
+<#ilmuolahraga>
+    rel:subItem <#journal-pgsd>.

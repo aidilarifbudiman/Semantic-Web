@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.journalku.id/journal-pgsd"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.journalku.id/journal-pgsd">
+    <Prefix name="" IRI="http://www.journalku.id/journal-pgsd#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#agamadanakhlakmulia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#estetika"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ilmuolahraga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ilmupengetahuan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#journal-pgsd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#journal-properties"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#kewarganegaraan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#skkmp"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hvAttributes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hvItem"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#authors"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#kelas"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tahun"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#volume"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Journal_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Journal_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Journal_3"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#agamadanakhlakmulia"/>
+        <Class IRI="#skkmp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#estetika"/>
+        <Class IRI="#skkmp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ilmuolahraga"/>
+        <Class IRI="#skkmp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ilmupengetahuan"/>
+        <Class IRI="#skkmp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#journal-properties"/>
+        <Class IRI="#journal-pgsd"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#kewarganegaraan"/>
+        <Class IRI="#skkmp"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#journal-pgsd"/>
+        <Class IRI="#skkmp"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#journal-pgsd"/>
+        <NamedIndividual IRI="#Journal_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#journal-pgsd"/>
+        <NamedIndividual IRI="#Journal_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#journal-pgsd"/>
+        <NamedIndividual IRI="#Journal_3"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hvAttributes"/>
+        <NamedIndividual IRI="#Journal_1"/>
+        <NamedIndividual IRI="#Journal_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hvAttributes"/>
+        <NamedIndividual IRI="#Journal_2"/>
+        <NamedIndividual IRI="#Journal_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hvAttributes"/>
+        <NamedIndividual IRI="#Journal_3"/>
+        <NamedIndividual IRI="#Journal_3"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#authors"/>
+        <NamedIndividual IRI="#Journal_1"/>
+        <Literal datatypeIRI="&xsd;string">Aidil Arif Budiman</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kelas"/>
+        <NamedIndividual IRI="#Journal_1"/>
+        <Literal datatypeIRI="&xsd;integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahun"/>
+        <NamedIndividual IRI="#Journal_1"/>
+        <Literal datatypeIRI="&xsd;dateTime">2017</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Journal_1"/>
+        <Literal datatypeIRI="&xsd;string">Undang-undang Dasar 1945</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#volume"/>
+        <NamedIndividual IRI="#Journal_1"/>
+        <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#authors"/>
+        <NamedIndividual IRI="#Journal_2"/>
+        <Literal datatypeIRI="&xsd;string">Elok Cahyaning</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kelas"/>
+        <NamedIndividual IRI="#Journal_2"/>
+        <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahun"/>
+        <NamedIndividual IRI="#Journal_2"/>
+        <Literal datatypeIRI="&xsd;dateTime">2018</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Journal_2"/>
+        <Literal datatypeIRI="&xsd;string">Batang Tubuh pada Undang-Undang Dasar 1945</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#volume"/>
+        <NamedIndividual IRI="#Journal_2"/>
+        <Literal datatypeIRI="&xsd;integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#authors"/>
+        <NamedIndividual IRI="#Journal_3"/>
+        <Literal datatypeIRI="&xsd;string">Putri Gustini</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kelas"/>
+        <NamedIndividual IRI="#Journal_3"/>
+        <Literal datatypeIRI="&xsd;integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tahun"/>
+        <NamedIndividual IRI="#Journal_3"/>
+        <Literal datatypeIRI="&xsd;dateTime">2019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Journal_3"/>
+        <Literal datatypeIRI="&xsd;string">Implementasi nilai pada setiap Pancasila</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#volume"/>
+        <NamedIndividual IRI="#Journal_3"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hvAttributes"/>
+        <Class IRI="#journal-pgsd"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hvItem"/>
+        <Class IRI="#journal-pgsd"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hvAttributes"/>
+        <Class IRI="#journal-properties"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hvItem"/>
+        <Class IRI="#skkmp"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#authors"/>
+        <Class IRI="#journal-properties"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#kelas"/>
+        <Class IRI="#journal-properties"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tahun"/>
+        <Class IRI="#journal-properties"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#title"/>
+        <Class IRI="#journal-properties"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#volume"/>
+        <Class IRI="#journal-properties"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#authors"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#kelas"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tahun"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#volume"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

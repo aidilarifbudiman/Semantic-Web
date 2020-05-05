@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.journalku.id/journal-pgsd#"
+     xml:base="http://www.journalku.id/journal-pgsd"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.journalku.id/journal-pgsd"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.journalku.id/journal-pgsd#hvAttributes -->
+
+    <owl:ObjectProperty rdf:about="http://www.journalku.id/journal-pgsd#hvAttributes">
+        <rdfs:domain rdf:resource="http://www.journalku.id/journal-pgsd#journal-pgsd"/>
+        <rdfs:range rdf:resource="http://www.journalku.id/journal-pgsd#journal-properties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.journalku.id/journal-pgsd#hvItem -->
+
+    <owl:ObjectProperty rdf:about="http://www.journalku.id/journal-pgsd#hvItem">
+        <rdfs:domain rdf:resource="http://www.journalku.id/journal-pgsd#journal-pgsd"/>
+        <rdfs:range rdf:resource="http://www.journalku.id/journal-pgsd#skkmp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.journalku.id/journal-pgsd#authors -->
+
+    <owl:DatatypeProperty rdf:about="http://www.journalku.id/journal-pgsd#authors">
+        <rdfs:domain rdf:resource="http://www.journalku.id/journal-pgsd#journal-properties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.journalku.id/journal-pgsd#kelas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.journalku.id/journal-pgsd#kelas">
+        <rdfs:domain rdf:resource="http://www.journalku.id/journal-pgsd#journal-properties"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.journalku.id/journal-pgsd#tahun -->
+
+    <owl:DatatypeProperty rdf:about="http://www.journalku.id/journal-pgsd#tahun">
+        <rdfs:domain rdf:resource="http://www.journalku.id/journal-pgsd#journal-properties"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.journalku.id/journal-pgsd#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.journalku.id/journal-pgsd#title">
+        <rdfs:domain rdf:resource="http://www.journalku.id/journal-pgsd#journal-properties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.journalku.id/journal-pgsd#volume -->
+
+    <owl:DatatypeProperty rdf:about="http://www.journalku.id/journal-pgsd#volume">
+        <rdfs:domain rdf:resource="http://www.journalku.id/journal-pgsd#journal-properties"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.journalku.id/journal-pgsd#agamadanakhlakmulia -->
+
+    <owl:Class rdf:about="http://www.journalku.id/journal-pgsd#agamadanakhlakmulia">
+        <rdfs:subClassOf rdf:resource="http://www.journalku.id/journal-pgsd#skkmp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.journalku.id/journal-pgsd#estetika -->
+
+    <owl:Class rdf:about="http://www.journalku.id/journal-pgsd#estetika">
+        <rdfs:subClassOf rdf:resource="http://www.journalku.id/journal-pgsd#skkmp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.journalku.id/journal-pgsd#ilmuolahraga -->
+
+    <owl:Class rdf:about="http://www.journalku.id/journal-pgsd#ilmuolahraga">
+        <rdfs:subClassOf rdf:resource="http://www.journalku.id/journal-pgsd#skkmp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.journalku.id/journal-pgsd#ilmupengetahuan -->
+
+    <owl:Class rdf:about="http://www.journalku.id/journal-pgsd#ilmupengetahuan">
+        <rdfs:subClassOf rdf:resource="http://www.journalku.id/journal-pgsd#skkmp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.journalku.id/journal-pgsd#journal-pgsd -->
+
+    <owl:Class rdf:about="http://www.journalku.id/journal-pgsd#journal-pgsd">
+        <owl:disjointWith rdf:resource="http://www.journalku.id/journal-pgsd#skkmp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.journalku.id/journal-pgsd#journal-properties -->
+
+    <owl:Class rdf:about="http://www.journalku.id/journal-pgsd#journal-properties">
+        <rdfs:subClassOf rdf:resource="http://www.journalku.id/journal-pgsd#journal-pgsd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.journalku.id/journal-pgsd#kewarganegaraan -->
+
+    <owl:Class rdf:about="http://www.journalku.id/journal-pgsd#kewarganegaraan">
+        <rdfs:subClassOf rdf:resource="http://www.journalku.id/journal-pgsd#skkmp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.journalku.id/journal-pgsd#skkmp -->
+
+    <owl:Class rdf:about="http://www.journalku.id/journal-pgsd#skkmp"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.journalku.id/journal-pgsd#Journal_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.journalku.id/journal-pgsd#Journal_1">
+        <rdf:type rdf:resource="http://www.journalku.id/journal-pgsd#journal-pgsd"/>
+        <volume rdf:datatype="&xsd;integer">2</volume>
+        <tahun rdf:datatype="&xsd;dateTime">2017</tahun>
+        <kelas rdf:datatype="&xsd;integer">3</kelas>
+        <authors rdf:datatype="&xsd;string">Aidil Arif Budiman</authors>
+        <title rdf:datatype="&xsd;string">Undang-undang Dasar 1945</title>
+        <hvAttributes rdf:resource="http://www.journalku.id/journal-pgsd#Journal_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.journalku.id/journal-pgsd#Journal_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.journalku.id/journal-pgsd#Journal_2">
+        <rdf:type rdf:resource="http://www.journalku.id/journal-pgsd#journal-pgsd"/>
+        <volume rdf:datatype="&xsd;integer">1</volume>
+        <kelas rdf:datatype="&xsd;integer">2</kelas>
+        <tahun rdf:datatype="&xsd;dateTime">2018</tahun>
+        <title rdf:datatype="&xsd;string">Batang Tubuh pada Undang-Undang Dasar 1945</title>
+        <authors rdf:datatype="&xsd;string">Elok Cahyaning</authors>
+        <hvAttributes rdf:resource="http://www.journalku.id/journal-pgsd#Journal_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.journalku.id/journal-pgsd#Journal_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.journalku.id/journal-pgsd#Journal_3">
+        <rdf:type rdf:resource="http://www.journalku.id/journal-pgsd#journal-pgsd"/>
+        <kelas rdf:datatype="&xsd;integer">1</kelas>
+        <tahun rdf:datatype="&xsd;dateTime">2019</tahun>
+        <title rdf:datatype="&xsd;string">Implementasi nilai pada setiap Pancasila</title>
+        <authors rdf:datatype="&xsd;string">Putri Gustini</authors>
+        <volume>1</volume>
+        <hvAttributes rdf:resource="http://www.journalku.id/journal-pgsd#Journal_3"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

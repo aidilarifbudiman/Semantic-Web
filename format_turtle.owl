@@ -1,0 +1,237 @@
+@prefix : <http://www.journalku.id/journal-pgsd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.journalku.id/journal-pgsd> .
+
+<http://www.journalku.id/journal-pgsd> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.journalku.id/journal-pgsd#hvAttributes
+
+:hvAttributes rdf:type owl:ObjectProperty ;
+              
+              rdfs:domain :journal-pgsd ;
+              
+              rdfs:range :journal-properties .
+
+
+
+###  http://www.journalku.id/journal-pgsd#hvItem
+
+:hvItem rdf:type owl:ObjectProperty ;
+        
+        rdfs:domain :journal-pgsd ;
+        
+        rdfs:range :skkmp .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.journalku.id/journal-pgsd#authors
+
+:authors rdf:type owl:DatatypeProperty ;
+         
+         rdfs:domain :journal-properties ;
+         
+         rdfs:range xsd:string .
+
+
+
+###  http://www.journalku.id/journal-pgsd#kelas
+
+:kelas rdf:type owl:DatatypeProperty ;
+       
+       rdfs:domain :journal-properties ;
+       
+       rdfs:range xsd:integer .
+
+
+
+###  http://www.journalku.id/journal-pgsd#tahun
+
+:tahun rdf:type owl:DatatypeProperty ;
+       
+       rdfs:domain :journal-properties ;
+       
+       rdfs:range xsd:dateTime .
+
+
+
+###  http://www.journalku.id/journal-pgsd#title
+
+:title rdf:type owl:DatatypeProperty ;
+       
+       rdfs:domain :journal-properties ;
+       
+       rdfs:range xsd:string .
+
+
+
+###  http://www.journalku.id/journal-pgsd#volume
+
+:volume rdf:type owl:DatatypeProperty ;
+        
+        rdfs:domain :journal-properties ;
+        
+        rdfs:range xsd:integer .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.journalku.id/journal-pgsd#agamadanakhlakmulia
+
+:agamadanakhlakmulia rdf:type owl:Class ;
+                     
+                     rdfs:subClassOf :skkmp .
+
+
+
+###  http://www.journalku.id/journal-pgsd#estetika
+
+:estetika rdf:type owl:Class ;
+          
+          rdfs:subClassOf :skkmp .
+
+
+
+###  http://www.journalku.id/journal-pgsd#ilmuolahraga
+
+:ilmuolahraga rdf:type owl:Class ;
+              
+              rdfs:subClassOf :skkmp .
+
+
+
+###  http://www.journalku.id/journal-pgsd#ilmupengetahuan
+
+:ilmupengetahuan rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf :skkmp .
+
+
+
+###  http://www.journalku.id/journal-pgsd#journal-pgsd
+
+:journal-pgsd rdf:type owl:Class ;
+              
+              owl:disjointWith :skkmp .
+
+
+
+###  http://www.journalku.id/journal-pgsd#journal-properties
+
+:journal-properties rdf:type owl:Class ;
+                    
+                    rdfs:subClassOf :journal-pgsd .
+
+
+
+###  http://www.journalku.id/journal-pgsd#kewarganegaraan
+
+:kewarganegaraan rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf :skkmp .
+
+
+
+###  http://www.journalku.id/journal-pgsd#skkmp
+
+:skkmp rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.journalku.id/journal-pgsd#Journal_1
+
+:Journal_1 rdf:type :journal-pgsd ,
+                    owl:NamedIndividual ;
+           
+           :volume 2 ;
+           
+           :tahun "2017"^^xsd:dateTime ;
+           
+           :kelas 3 ;
+           
+           :authors "Aidil Arif Budiman"^^xsd:string ;
+           
+           :title "Undang-undang Dasar 1945"^^xsd:string ;
+           
+           :hvAttributes :Journal_1 .
+
+
+
+###  http://www.journalku.id/journal-pgsd#Journal_2
+
+:Journal_2 rdf:type :journal-pgsd ,
+                    owl:NamedIndividual ;
+           
+           :volume 1 ;
+           
+           :kelas 2 ;
+           
+           :tahun "2018"^^xsd:dateTime ;
+           
+           :title "Batang Tubuh pada Undang-Undang Dasar 1945"^^xsd:string ;
+           
+           :authors "Elok Cahyaning"^^xsd:string ;
+           
+           :hvAttributes :Journal_2 .
+
+
+
+###  http://www.journalku.id/journal-pgsd#Journal_3
+
+:Journal_3 rdf:type :journal-pgsd ,
+                    owl:NamedIndividual ;
+           
+           :kelas 1 ;
+           
+           :tahun "2019"^^xsd:dateTime ;
+           
+           :title "Implementasi nilai pada setiap Pancasila"^^xsd:string ;
+           
+           :authors "Putri Gustini"^^xsd:string ;
+           
+           :volume "1" ;
+           
+           :hvAttributes :Journal_3 .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+
